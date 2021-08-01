@@ -1,7 +1,7 @@
-import styled from 'styled-components/macro';
-import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
-import { FaTimes } from 'react-icons/fa';
+import styled from "styled-components/macro";
+import { Link as LinkR } from "react-router-dom";
+import { Link as LinkS } from "react-scroll";
+import { FaTimes } from "react-icons/fa";
 
 export const MobileNavbarContainer = styled.aside<{ isOpen: boolean }>`
   position: fixed;
@@ -13,8 +13,8 @@ export const MobileNavbarContainer = styled.aside<{ isOpen: boolean }>`
   align-items: center;
   left: 0;
   transition: 0.3s ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
-  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
+  opacity: ${({ isOpen }) => (isOpen ? "1" : "0")};
+  top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
 
 export const Icon = styled.div`
@@ -59,7 +59,7 @@ export const MobileNavbarLink = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: #00cccc;
     transition: 0.2s ease-in-out;
   }
 `;
@@ -70,11 +70,11 @@ export const MobileBtnWrap = styled.div`
 `;
 
 export const MobileNavbarRoute = styled(LinkR)`
-  background: #01bf71;
+  background: #00cccc;
   border-radius: 50px;
   white-space: nowrap;
   padding: 16px 64px;
-  color: #010606;
+  color: #08090b;
   font-size: 16px;
   outline: none;
   border: none;
@@ -82,9 +82,9 @@ export const MobileNavbarRoute = styled(LinkR)`
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 
-  $:hover {
+  &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
-    color: #010606;
+    color: #08090b;
   }
 `;
